@@ -1,11 +1,11 @@
 def isPrime(x):
-	if(x<1):return False
+	if(x<2):return False
 	for i in range(2,x):
 		if(x%i==0):
 			return False
 	return True
 
-while(isPrime(1)):
+while(True):
 	try:
 		num=int(input("Give me an Integer and I will check if any number between 1 and it inclusive is prime."))
 	except:
